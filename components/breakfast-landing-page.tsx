@@ -350,7 +350,7 @@ function HeroSection() {
       <div className="hero-offer">
         <p className="old-price">De R$ 67,00</p>
         <p className="hero-price">
-          <span className="currency">R$</span>17,90
+          <span className="currency">R$</span>10,00
         </p>
         <PrimaryLink className="hero-cta">QUERO AS RECEITAS AGORA</PrimaryLink>
 
@@ -597,8 +597,8 @@ function PlanCard({
     ? `${siteAssets}/premium-bundle-v3-5zAHUzQQ.webp`
     : `${siteAssets}/plano-basico--0E3kBLk.webp`
   const checkoutUrl = premium
-    ? 'https://pay.hotmart.com/U106157894R?checkoutMode=10'
-    : 'https://pay.hotmart.com/K106157682V?checkoutMode=10'
+    ? 'https://pay.lowify.com.br/checkout?product_id=uGpgts'
+    : 'https://pay.lowify.com.br/checkout?product_id=mvlXaE'
 
   return (
     <article className={`plan-card${premium ? ' plan-card-premium' : ''}`}>
@@ -632,7 +632,7 @@ function PlanCard({
 
       <div className="plan-price-block">
         <p className="old-price">De R$ {premium ? '147,00' : '67,00'}</p>
-        <p className="plan-price">R${premium ? '27,90' : '17,90'}</p>
+        <p className="plan-price">R${premium ? '24,90' : '10,00'}</p>
       </div>
 
       <a className="primary-link plan-cta" href={checkoutUrl} target="_blank" rel="noopener noreferrer">
